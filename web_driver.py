@@ -1,4 +1,4 @@
-from selenium import webdriver
+ffrom selenium import webdriver
 import time
 from selenium.webdriver.common.keys import Keys
 from webdriver_manager.chrome import ChromeDriverManager
@@ -12,7 +12,7 @@ driver.maximize_window()
 # Login to Twitter
 driver.get("https://twitter.com/login?lang=en-gb")
 time.sleep(3)
-driver.find_element_by_name('text').send_keys('usename')
+driver.find_element_by_name('text').send_keys('Your username')
 time.sleep(3)
 # driver.find_element_by_xpath(
 #     '/html/body/div/div/div/div[1]/div/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div[1]/div/div[6]/div/span/span').click()
@@ -22,13 +22,13 @@ time.sleep(3)
 # driver.find_element_by_xpath("//span[text()='Next']").click()
 
 
-driver.find_element_by_name('text').send_keys('Email')
+driver.find_element_by_name('text').send_keys('Your Email')
 time.sleep(3)
 driver.find_element_by_xpath(
     '/html/body/div/div/div/div[1]/div/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div').click()
 time.sleep(3)
 
-driver.find_element_by_name('password').send_keys('Password')
+driver.find_element_by_name('password').send_keys('Your Password')
 time.sleep(3)
 driver.find_element_by_xpath(
     '/html/body/div/div/div/div[1]/div/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div/span').click()
